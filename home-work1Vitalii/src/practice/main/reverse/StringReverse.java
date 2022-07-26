@@ -29,6 +29,7 @@ public class StringReverse {
 			System.out.print(tyy[i]);
 		}
 		System.out.println();
+	
 	}
 
 	public static void reverseString2(String str2) {
