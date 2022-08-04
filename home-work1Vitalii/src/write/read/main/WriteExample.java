@@ -64,12 +64,18 @@ public class WriteExample {
 			} catch (NumberFormatException e) {
 				System.out.println("there is a selection of words starting with your characters");
 			}
-			for (String string : dictionarList) {
-				if (string.startsWith(phraseString) && scanDictionary.size() < 10) {
+			long startTime = System.currentTimeMillis();
+			System.out.println(startTime);
+				 for (String string : dictionarList) {
+					 string.charAt(0);
+				 if (string.startsWith(phraseString) && scanDictionary.size() < 10) {
 					scanDictionary.add(string);
 					System.out.println(string);
 				}
 			}
+			Long endTimeLong = System.currentTimeMillis();
+			System.out.println(endTimeLong);
+			System.out.println(endTimeLong - startTime);
 			scanDictionary.clear();
 		}
 	}
